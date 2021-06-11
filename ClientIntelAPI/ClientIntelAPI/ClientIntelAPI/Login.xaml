@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ClientIntelAPI.Login"
+             Padding="20"
+             BackgroundColor="White">
+    
+    <ContentPage.Content >
+        <StackLayout  VerticalOptions="Center">
+            <Frame CornerRadius="5">
+                <StackLayout>
+                    <Image Aspect="Fill"  Source="https://www.intel.fr/content/dam/www/public/us/en/images/logos/logo-rwd.png.rendition.intel.web.864.486.png" />
+                    <Label Text="Login" HorizontalOptions="Center"  FontSize="20" TextColor="DeepSkyBlue" FontAttributes="Bold"/>
+
+                </StackLayout>
+            </Frame>
+
+
+            <Label Text="UserName:" HorizontalOptions="Start" FontSize="20" TextColor="DeepSkyBlue"/>
+            <Entry  TextColor="Black" ClearButtonVisibility="WhileEditing"/>
+
+            <Label Text="Password:" HorizontalOptions="Start" FontSize="20" TextColor="DeepSkyBlue"/>
+            <Entry  IsPassword="True" MaxLength="5" TextColor="Black" ClearButtonVisibility="WhileEditing" />
+
+            <Button BackgroundColor="DeepSkyBlue" CornerRadius="5" Margin="30" Text="SUBMIT" TextColor="White" FontSize="20" Command="{Binding LoginCommand}" FontAttributes="Bold"/>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
